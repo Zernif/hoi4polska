@@ -1,0 +1,767 @@
+focus_tree = {
+	id = polish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = Pol
+		}
+	}
+	
+	############################
+	##### POLITICS SECTION #####
+	############################
+
+    focus = {
+		id = Pol_Wielkie_Zmiany
+		icon = GFX_goal_generic_demand_territory
+		
+		x = 24
+		y = 0
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+	
+    focus = {
+	    id = Pol_Strajk_Chlopski
+	 icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = Pol_Wielkie_Zmiany }
+		mutually_exclusive = { focus = Pol_Droga_Marszalka focus = Pol_Polski_Nacjonalizm }
+		 x = 16
+		 y = 1
+		
+		 cost = 4
+	            
+	    ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		 
+		completion_reward = {
+		    = { 
+           ideology = communism
+           popularity = 5.0
+           }
+			
+			
+		} 
+	}	
+	
+	focus = {
+	    id = Pol_Polski_Nacjonalizm
+	 icon = GFX_goal_generic_political_pressure
+	 prerequisite = { focus = Pol_Wielkie_Zmiany }
+	 mutually_exclusive = { focus = Pol_Strajk_Chlopski focus = Pol_Droga_Marszalka }
+		x = 32
+		y = 1
+		
+		cost = 4
+	    
+	    ai_will_do = {
+		   factor = 10      
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = {
+			
+			
+		} 
+	
+	}
+	
+	focus = {
+	   id = Pol_Droga_Marszalka
+	   icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	  prerequisite = { focus = Pol_Wielkie_Zmiany }
+	   mutually_exclusive = { focus = Pol_Polski_Nacjonalizm focus = Pol_Strajk_Chlopski }
+	   
+	   
+	   X = 24
+	   Y = 1 
+	    
+	   cost = 4
+	   
+	   ai_will_do = {
+	       factor = 10
+	   }
+	   
+	   available_if_capitulated = Yes
+	   
+	   completion_reward = {
+	        
+	   
+	   
+	   
+	   }
+	
+	
+	}
+	
+	
+	focus = {
+	   id = Pol_DDD
+	  icon = GFX_goal_generic_dangerous_deal
+	  prerequisite = { focus = Pol_Strajk_Chlopski }
+	 
+	  
+	  
+	 x = 16
+	 y = 2
+	 
+	 cost = 5
+	 
+	    ai_will_do = {
+	        factor = 10
+	    }
+	    available_if_capitulated = Yes
+		completion_reward = {
+		
+		}
+		
+	}	 
+	
+	
+	
+	focus = {
+	   id = Pol_Ludowy_Kongres_Robotniczy
+	  icon = GFX_goal_generic_dangerous_deal
+	  prerequisite = { focus = Pol_DDD }
+	  mutually_exclusive = { focus = Pol_Komunistyczna_Partia_Polski }
+	  
+	  
+	 x = 12
+	 y = 3
+	 
+	 cost = 5
+	 
+	    ai_will_do = {
+	        factor = 10
+	    }
+	    available_if_capitulated = Yes
+		completion_reward = {
+		
+		}
+		
+	}	 
+	
+	
+	focus = {
+      id = Pol_Idea_Socjalizmu
+	  icon = GFX_goal_support_communism
+	  prerequisite = { focus = Pol_Ludowy_Kongres_Robotniczy }
+	  x = 12
+	  y = 4
+	  cost = 7
+	    ai_will_do = {
+	      factor = 10
+	  
+	    }
+	
+	  
+	  available_if_capitulated = Yes
+	  
+	  completion_reward = {
+	  
+	  
+	  }
+	} 
+	
+
+    focus = {
+      id = Pol_Komunistyczna_Partia_Polski
+	  icon = GFX_goal_support_communism
+	  prerequisite = { focus = Pol_DDD }
+	  mutually_exclusive = { focus = Pol_Ludowy_Kongres_Robotniczy }
+	  
+	  x = 20
+	  y = 3
+	 
+	  cost = 5
+	  
+	    ai_will_do = {
+	        factor = 10
+	    }
+	  
+	  available_if_capitulated = Yes
+	  
+	  completion_reward = {
+	  }
+	} 
+	
+	
+   focus = {
+      id = Pol_Plan_4_Reform
+	 icon = GFX_goal_ideology_national_populist
+	  prerequisite = { focus = Pol_Ludowy_Kongres_Robotniczy  }
+	  
+	  x = 9
+	  y = 4
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Faza_2_Reforma_Wojska
+
+	 icon = GFX_goal_generic_army_doctrines
+	  prerequisite = { focus = Pol_Faza_1_Reforma_Struktur }
+	  
+	  x = 9
+	  y = 6
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Faza_1_Reforma_Struktur
+
+	 icon = GFX_goal_generic_national_unity
+	  prerequisite = { focus = Pol_Plan_4_Reform  }
+	  
+	  x = 9
+	  y = 5
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	focus = {
+      id = Pol_Faza_3_Reforma_Komunikacyjna
+
+	 icon = GFX_goal_generic_construct_infrastructure
+	  prerequisite = { focus = Pol_Faza_2_Reforma_Wojska }
+	  
+	  x = 9
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+    focus = {
+      id = Pol_Faza_4_Reforma_Rolnictwa_i_Oswiaty
+
+	 icon = GFX_goal_generic_soviet_construction
+	  prerequisite = { focus = Pol_Faza_3_Reforma_Komunikacyjna  }
+	  
+	  x = 9
+	  y = 8
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	focus = {
+      id = Pol_Komisarze_Polityczni
+
+	 icon = GFX_goal_generic_military_deal
+	  prerequisite = { focus = Pol_Komunistyczna_Partia_Polski  }
+	  
+	  x = 20
+	  y = 4
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Biuro_Spraw_Miedzynarodowych
+
+	 icon = GFX_goal_generic_intelligence_exchange
+	  prerequisite = { focus = Pol_Komisarze_Polityczni focus = Pol_Idea_Socjalizmu }
+	  
+	  x = 16
+	  y = 5
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Ministerstwo_Propagandy
+
+	 icon =  GFX_goal_generic_propaganda
+	  prerequisite = { focus = Pol_Idea_Socjalizmu }
+	  
+	  x = 12
+	  y = 5
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	
+	
+	focus = {
+      id = Pol_Projekt_Pakt_Warszawa
+
+	 icon = GFX_goal_generic_alliance
+	  prerequisite = { focus = Pol_Biuro_Spraw_Miedzynarodowych }
+	  mutually_exclusive = { focus = Pol_Rozmowy_z_ZSRR }
+	  x = 15
+	  y = 6
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}
+	
+	
+	focus = {
+      id = Pol_Rozmowy_z_ZSRR
+
+	 icon = GFX_focus_chi_mission_to_the_soviet_union
+	  prerequisite = { focus = Pol_Biuro_Spraw_Miedzynarodowych }
+	  mutually_exclusive = { focus = Pol_Projekt_Pakt_Warszawa }
+	  
+	  x = 17
+	  y = 6
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Dolaczenie_do_Komiternu
+
+	 icon = GFX_goal_commune_politics
+	  prerequisite = { focus = Pol_Rozmowy_z_ZSRR }
+	  available = {
+	 		is_puppet = no
+	 		is_in_faction = no
+	 		OR = {
+	 			has_government = communism
+	 			
+	 		}
+	 		has_war = no
+ 			SOV = {
+ 				exists = yes
+ 				has_government = communism
+ 				is_faction_leader = yes
+ 			}
+		}
+	  
+	  x = 17
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	
+	
+	focus = {
+      id = Pol_Plan_3_letni
+
+	 icon = GFX_goal_women_industry
+	  prerequisite = { focus = Pol_Komisarze_Polityczni }
+	  
+	  
+	  x = 20
+	  y = 5
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Czystka_Narodowa
+
+	 icon = GFX_goal_revolution
+	  prerequisite = { focus = Pol_Ministerstwo_Propagandy }
+	  
+	  
+	  x = 12
+	  y = 6
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	
+	focus = {
+      id = Pol_Centralne_Planowanie
+
+	 icon =  GFX_goal_generic_positive_trade_relations
+	  prerequisite = { focus = Pol_Plan_3_letni }
+	  
+	  
+	  x = 20
+	  y = 6
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	
+	
+	focus = {
+      id = Pol_PGR
+
+	 icon = GFX_goal_generic_production
+	  prerequisite = { focus = Pol_Centralne_Planowanie }
+	  
+	  
+	  x = 21
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	
+	
+	focus = {
+      id = Pol_Zjednocznie_Klas_Spolecznych
+
+	 icon = GFX_focus_yog_pan_slavic_congress
+	  prerequisite = { focus = Pol_Centralne_Planowanie }
+	  
+	  
+	  x = 19
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	focus = {
+      id = Pol_Konstytucja_Ludu_Polskiego
+
+	 icon = GFX_socialist_constitution
+	  prerequisite = { focus = Pol_Czystka_Narodowa }
+	  
+	  
+	  x = 13
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	focus = {
+      id = Pol_Sztab_Generalny
+
+	 icon = GFX_goal_officers
+	  prerequisite = { focus = Pol_Czystka_Narodowa }
+	  
+	  
+	  x = 11
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	focus = {
+      id = Pol_Zaprosmy_Szwecje
+
+	 icon = GFX_goal_generic_major_alliance
+	  prerequisite = { focus = Pol_Projekt_Pakt_Warszawa }
+	  
+	  
+	  x = 15
+	  y = 7
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	focus = {
+      id = Pol_Zaprosmy_Youguslawie
+
+	 icon = GFX_goal_generic_major_alliance
+	  prerequisite = { focus = Pol_Zaprosmy_Szwecje }
+	  
+	  
+	  x = 15
+	  y = 8
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	############################
+	#### INDUSTRIAL SECTION ####
+	############################
+	
+	
+	
