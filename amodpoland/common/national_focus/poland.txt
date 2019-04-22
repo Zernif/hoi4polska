@@ -49,14 +49,14 @@ focus_tree = {
 		}
 		
 		available_if_capitulated = yes
-		 
+		
 		completion_reward = {
-		    = { 
-           ideology = communism
-           popularity = 5.0
-           }
-			
-			
+		   add_stability = -0.05
+
+		   add_popularity = { 
+           ideology = communism 
+           popularity = 0.05
+           }	
 		} 
 	}	
 	
@@ -113,8 +113,8 @@ focus_tree = {
 	
 	
 	focus = {
-	   id = Pol_DDD
-	  icon = GFX_goal_generic_dangerous_deal
+	   id = Pol_Rada_Narodowa
+	  icon = GFX_goal_government_icon
 	  prerequisite = { focus = Pol_Strajk_Chlopski }
 	 
 	  
@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
 	   id = Pol_Ludowy_Kongres_Robotniczy
 	  icon = GFX_goal_generic_dangerous_deal
-	  prerequisite = { focus = Pol_DDD }
+	  prerequisite = { focus = Pol_Rada_Narodowa }
 	  mutually_exclusive = { focus = Pol_Komunistyczna_Partia_Polski }
 	  
 	  
@@ -184,7 +184,7 @@ focus_tree = {
     focus = {
       id = Pol_Komunistyczna_Partia_Polski
 	  icon = GFX_goal_support_communism
-	  prerequisite = { focus = Pol_DDD }
+	  prerequisite = { focus = Pol_Rada_Narodowa }
 	  mutually_exclusive = { focus = Pol_Ludowy_Kongres_Robotniczy }
 	  
 	  x = 20
@@ -506,7 +506,7 @@ focus_tree = {
 	focus = {
       id = Pol_Czystka_Narodowa
 
-	 icon = GFX_goal_revolution
+	 icon = GFX_Communist_Discourse
 	  prerequisite = { focus = Pol_Ministerstwo_Propagandy }
 	  
 	  
@@ -586,7 +586,7 @@ focus_tree = {
 	focus = {
       id = Pol_Zjednocznie_Klas_Spolecznych
 
-	 icon = GFX_focus_yog_pan_slavic_congress
+	 icon = GFX_focus_generic_join_comintern
 	  prerequisite = { focus = Pol_Centralne_Planowanie }
 	  
 	  
@@ -715,7 +715,7 @@ focus_tree = {
 	
 	
 	
-	
+
 	
 	
 	
@@ -763,5 +763,8 @@ focus_tree = {
 	#### INDUSTRIAL SECTION ####
 	############################
 	
+	
+	
+
 	
 	

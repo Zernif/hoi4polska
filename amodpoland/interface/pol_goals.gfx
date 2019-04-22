@@ -252,10 +252,6 @@ spriteTypes = {
 	}
     
 	
-	SpriteType = {
-	name = "GFX_goal_revolution"
-	texturefile = "gfx/interface/goals/goal_revolution.dds"			
-	}
 	
 	SpriteType = {
 	name = "GFX_goal_women_industry"
@@ -272,14 +268,31 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/goal_officers.dds"			
 	}	
 	
-	SpriteType = {
-	name = "GFX_focus_yog_pan_slavic_congress"
-	texturefile = "gfx/interface/goals/focus_yog_pan_slavic_congress.dds"			
-	}	
 	
 	SpriteType = {
 	name = "GFX_goal_commune_politics"
 	texturefile = "gfx/interface/goals/goal_commune_politics.dds"			
 	}	
+	
+	SpriteType = {
+	name = "GFX_Communist_Discourse"
+	texturefile = "gfx/interface/goals/Communist_Discourse.dds"			
+	}
+
+    SpriteType = {
+	name = "GFX_focus_generic_join_comintern"
+	texturefile = "gfx/interface/goals/focus_generic_join_comintern.dds"			
+	}	
+
+    SpriteType = {
+	name = "GFX_goal_government_icon"
+	texturefile = "gfx/interface/goals/goal_government_icon.dds"			
+	}		
 }	
+
+
+
+
+
+
 	
