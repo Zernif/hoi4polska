@@ -116,13 +116,17 @@ focus_tree = {
 	   id = Pol_Rada_Narodowa
 	  icon = GFX_goal_government_icon
 	  prerequisite = { focus = Pol_Strajk_Chlopski }
-	 
+	    available = {
+		has_war = no
+		
+		
+		}
 	  
 	  
 	 x = 16
 	 y = 2
 	 
-	 cost = 5
+	 cost = 2
 	 
 	    ai_will_do = {
 	        factor = 10
@@ -165,7 +169,7 @@ focus_tree = {
 	  prerequisite = { focus = Pol_Ludowy_Kongres_Robotniczy }
 	  x = 12
 	  y = 4
-	  cost = 7
+	  cost = 10
 	    ai_will_do = {
 	      factor = 10
 	  
@@ -374,7 +378,7 @@ focus_tree = {
 	  x = 12
 	  y = 5
 	  
-	  cost = 10
+	  cost = 5
 	   ai_will_do = {
 	     factor = 10 
 		 
@@ -409,7 +413,8 @@ focus_tree = {
 		
 		available_if_capitulated = Yes
 		
-		completion_reward = { 
+		completion_reward = {
+        create_faction = Pakt_Warszawski		
 		}
 		
 	}
@@ -617,7 +622,7 @@ focus_tree = {
 	  x = 13
 	  y = 7
 	  
-	  cost = 10
+	  cost = 5
 	   ai_will_do = {
 	     factor = 10 
 		 
@@ -677,6 +682,8 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
+		Pol = { 
+		add_to_faction = Swe }
 		}
 		
 	}	
