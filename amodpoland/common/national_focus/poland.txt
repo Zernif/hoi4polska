@@ -51,7 +51,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		   add_stability = -0.05
+		   
 
 		   add_popularity = { 
            ideology = communism 
@@ -133,7 +133,7 @@ focus_tree = {
 	    }
 	    available_if_capitulated = Yes
 		completion_reward = {
-		
+		set_state_name = Polska_Reczpospolita_Ludowa 
 		}
 		
 	}	 
@@ -388,6 +388,7 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
+		add_ideas = 
 		}
 		
 	}	
@@ -682,8 +683,8 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
-		Pol = { 
-		add_to_faction = Swe }
+		POL = { 
+		add_to_faction = SWE }
 		}
 		
 	}	
@@ -709,6 +710,8 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
+		POL = { 
+		add_to_faction = YUG }
 		}
 		
 	}	
