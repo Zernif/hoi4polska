@@ -157,7 +157,10 @@ focus_tree = {
 	    }
 	    available_if_capitulated = Yes
 		completion_reward = {
-		
+		add_timed_idea = {
+        idea = Wplywy_Komunistow
+        days = 800
+        } 
 		}
 		
 	}	 
@@ -203,6 +206,10 @@ focus_tree = {
 	  available_if_capitulated = Yes
 	  
 	  completion_reward = {
+	  add_timed_idea = {
+        idea = Wplywy_Komunistow
+        days = 800
+        } 
 	  }
 	} 
 	
@@ -343,11 +350,11 @@ focus_tree = {
 		
 		completion_reward = { 
 		add_timed_idea = {
-        idea = Urząd_Bezpieczeństwa
+        idea = Urzad_Bezpieczenstwa
         days = 365
         } 
 		}
-		Urząd Bezpieczeństwa
+		
 	}	
 	
 	focus = {
@@ -394,7 +401,7 @@ focus_tree = {
 		completion_reward = { 
 		add_timed_idea = {
         idea = Ministerstwo_Propagandy
-        days = 365
+        days = 600
         } 
 		}
 		
@@ -497,11 +504,11 @@ focus_tree = {
       id = Pol_Plan_3_letni
 
 	 icon = GFX_goal_women_industry
-	  prerequisite = { focus = Pol_Komisarze_Polityczni }
+	  prerequisite = { focus = Pol_Centralne_Planowanie }
 	  
 	  
 	  x = 20
-	  y = 5
+	  y = 6
 	  
 	  cost = 10
 	   ai_will_do = {
@@ -547,11 +554,11 @@ focus_tree = {
       id = Pol_Centralne_Planowanie
 
 	 icon =  GFX_goal_generic_positive_trade_relations
-	  prerequisite = { focus = Pol_Plan_3_letni }
+	  prerequisite = { focus = Pol_Komisarze_Polityczni }
 	  
 	  
 	  x = 20
-	  y = 6
+	  y = 5
 	  
 	  cost = 10
 	   ai_will_do = {
@@ -563,6 +570,11 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
+		add_timed_idea = {
+        idea = Centralne_Planowanie 
+        days = 1000
+        } 
+
 		}
 		
 	}	
@@ -574,7 +586,7 @@ focus_tree = {
       id = Pol_PGR
 
 	 icon = GFX_goal_generic_production
-	  prerequisite = { focus = Pol_Centralne_Planowanie }
+	  prerequisite = { focus = Pol_Plan_3_letni }
 	  
 	  
 	  x = 21
@@ -590,6 +602,10 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
+		add_timed_idea = {
+        idea = PGR
+        days = 720
+        } 
 		}
 		
 	}	
@@ -601,7 +617,7 @@ focus_tree = {
       id = Pol_Zjednocznie_Klas_Spolecznych
 
 	 icon = GFX_focus_generic_join_comintern
-	  prerequisite = { focus = Pol_Centralne_Planowanie }
+	  prerequisite = { focus = Pol_Plan_3_letni }
 	  
 	  
 	  x = 19
