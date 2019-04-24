@@ -342,8 +342,12 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
+		add_timed_idea = {
+        idea = Urząd_Bezpieczeństwa
+        days = 365
+        } 
 		}
-		
+		Urząd Bezpieczeństwa
 	}	
 	
 	focus = {
@@ -388,8 +392,12 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
-		add_ideas = 
+		add_timed_idea = {
+        idea = Ministerstwo_Propagandy
+        days = 365
+        } 
 		}
+		
 		
 	}	
 	
