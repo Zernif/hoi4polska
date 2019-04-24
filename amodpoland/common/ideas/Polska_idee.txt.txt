@@ -17,12 +17,10 @@ ideas = {
             stability_weekly = 0.001 			       
             war_support_weekly = 0.001
             }
-            rule = {
-                can_create_factions = yes
-            }
+            
         }
       
-        Urząd_Bezpieczeństwa = {
+        Urzad_Bezpieczenstwa = {
             
             allowed = {
                 always = no
@@ -36,12 +34,97 @@ ideas = {
             
             modifier = {
             stability_weekly = 0.001 	
-            army_org = 5 
+            
             }
-            rule = {
-                can_create_factions = yes
+        } 
+        
+		
+        PGR = {
+            allowed = {
+                always = no
             }
-        }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.05 
+            
+            }
+        } 
+
+        Zjednocznie_Klas_Spolecznych = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            
+            
+            }
+        } 
+
+        Centralne_Planowanie = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            production_factory_start_efficiency_factor = 0.10
+            production_speed_industrial_complex_factor = 0.05
+            roduction_speed_arms_factory_factor = 0.05
+            
+            }
+        } 
+
+        Wplywy_Komunistow = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            
+            
+            }
+        } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -52,8 +135,5 @@ ideas = {
 
 
     }
-	
-
-
 
 }
