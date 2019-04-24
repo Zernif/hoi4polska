@@ -1,0 +1,59 @@
+ideas = {
+
+    country = {
+        Ministerstwo_Propagandy = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            stability_weekly = 0.001 			       
+            war_support_weekly = 0.001
+            }
+            rule = {
+                can_create_factions = yes
+            }
+        }
+      
+        Urząd_Bezpieczeństwa = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            stability_weekly = 0.001 	
+            army_org = 5 
+            }
+            rule = {
+                can_create_factions = yes
+            }
+        }
+
+
+
+
+
+
+
+
+
+    }
+	
+
+
+
+}
