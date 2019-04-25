@@ -2602,7 +2602,7 @@
  ENG_corgis_2:0 "Dookie"
  ENG_corgis_3:0 "Jane"
  ENG_corgis_1:0 "Crackers"
- ENG_jfc_fuller:0 "J.F.C. Fuller"
+ ENG_jfc_fuller:0 "J.F.C. Fuller" 
  HOL_jan_goudriaan:0 "Jan Goudriaan"
  HOL_cornelis_van_geelkerken:0 "Cornelis van Geelkerken"
  HOL_jacob_adriaan_de_wilde:0 "Jacob Adriaan de Wilde"
@@ -2631,6 +2631,7 @@
  PGR:0 "PGR"
  Centralne_Planowanie:0 "Centralne Planowanie"
  Wplywy_Komunistow:0 "Wpływy Komunistów"
-
-
+ Podzielone_Spoleczenstwo:0 "Podzielone Społeczeństwo"
+ Podzielone_Spoleczenstwo_desc:0 "Wojny i spory polityczne mocno podzieliły społeczeństwo. Podział powoduje osłabienie naszego kraju pod każdym wzglęem. Niestety, mogą to wykorzystać nasi wrogowie."
+ Sztab_Generalny:0 "Sztab Generalny"
 
