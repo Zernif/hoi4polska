@@ -159,7 +159,7 @@ focus_tree = {
 		completion_reward = {
 		add_timed_idea = {
         idea = Wplywy_Komunistow
-        days = 800
+        days = 720
         } 
 		}
 		
@@ -208,7 +208,7 @@ focus_tree = {
 	  completion_reward = {
 	  add_timed_idea = {
         idea = Wplywy_Komunistow
-        days = 800
+        days = 720 
         } 
 	  }
 	} 
@@ -241,7 +241,9 @@ focus_tree = {
 
 	 icon = GFX_goal_generic_army_doctrines
 	  prerequisite = { focus = Pol_Faza_1_Reforma_Struktur }
-	  
+	  Available = {
+      date < 1939.02.01
+      }
 	  x = 9
 	  y = 6
 	  
@@ -264,7 +266,10 @@ focus_tree = {
 
 	 icon = GFX_goal_generic_national_unity
 	  prerequisite = { focus = Pol_Plan_4_Reform  }
-	  
+	  Available = {
+      date < 1937.01.01
+      }
+
 	  x = 9
 	  y = 5
 	  
@@ -288,7 +293,9 @@ focus_tree = {
 
 	 icon = GFX_goal_generic_construct_infrastructure
 	  prerequisite = { focus = Pol_Faza_2_Reforma_Wojska }
-	  
+	  Available = {
+      date < 1941.07.11
+      }
 	  x = 9
 	  y = 7
 	  
@@ -311,7 +318,9 @@ focus_tree = {
 
 	 icon = GFX_goal_generic_soviet_construction
 	  prerequisite = { focus = Pol_Faza_3_Reforma_Komunikacyjna  }
-	  
+	  Available = {
+      date < 1943.02.26
+      }
 	  x = 9
 	  y = 8
 	  
@@ -349,10 +358,7 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = { 
-		add_timed_idea = {
-        idea = Urzad_Bezpieczenstwa
-        days = 365
-        } 
+		 add_ideas = Urzad_Bezpieczenstwa
 		}
 		
 	}	
@@ -681,7 +687,8 @@ focus_tree = {
 		
 		available_if_capitulated = Yes
 		
-		completion_reward = { 
+		completion_reward = {
+		 add_ideas = Sztab_Generalny
 		}
 		
 	}	
@@ -741,6 +748,35 @@ focus_tree = {
 	}	
 	
 	
+	focus = {
+      id = Pol_Stan_Wojenny
+
+	 icon = GFX_Stan_Wojenny
+	  
+	  Available = {
+      has_war = yes
+      }
+	  
+	  
+	  
+	  x = 16
+	  y = 4
+	  
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = {
+		 add_ideas = Sztab_Generalny
+		}
+		
+	}
 	
 	
 	
