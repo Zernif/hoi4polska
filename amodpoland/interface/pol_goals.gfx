@@ -245,14 +245,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_generic_collective_defense.dds"			
 	}
 
-
     SpriteType = {
 	name = "GFX_socialist_constitution"
 	texturefile = "gfx/interface/goals/socialist_constitution.dds"			
 	}
     
-	
-	
 	SpriteType = {
 	name = "GFX_goal_women_industry"
 	texturefile = "gfx/interface/goals/goal_women_industry.dds"			
@@ -287,6 +284,11 @@ spriteTypes = {
     SpriteType = {
 	name = "GFX_goal_government_icon"
 	texturefile = "gfx/interface/goals/goal_government_icon.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Stan_Wojenny"
+	texturefile = "gfx/interface/goals/Stan_Wojenny.dds"			
 	}		
 }	
 
