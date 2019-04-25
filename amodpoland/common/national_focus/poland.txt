@@ -242,7 +242,7 @@ focus_tree = {
 	 icon = GFX_goal_generic_army_doctrines
 	  prerequisite = { focus = Pol_Faza_1_Reforma_Struktur }
 	  Available = {
-      date < 1939.02.01
+      date > 1939.02.01
       }
 	  x = 9
 	  y = 6
@@ -267,7 +267,7 @@ focus_tree = {
 	 icon = GFX_goal_generic_national_unity
 	  prerequisite = { focus = Pol_Plan_4_Reform  }
 	  Available = {
-      date < 1937.01.01
+      date > 1937.01.01
       }
 
 	  x = 9
@@ -294,7 +294,7 @@ focus_tree = {
 	 icon = GFX_goal_generic_construct_infrastructure
 	  prerequisite = { focus = Pol_Faza_2_Reforma_Wojska }
 	  Available = {
-      date < 1941.07.11
+      date > 1941.07.11
       }
 	  x = 9
 	  y = 7
@@ -319,7 +319,7 @@ focus_tree = {
 	 icon = GFX_goal_generic_soviet_construction
 	  prerequisite = { focus = Pol_Faza_3_Reforma_Komunikacyjna  }
 	  Available = {
-      date < 1943.02.26
+      date > 1943.02.26
       }
 	  x = 9
 	  y = 8
@@ -773,7 +773,7 @@ focus_tree = {
 		available_if_capitulated = Yes
 		
 		completion_reward = {
-		 add_ideas = Sztab_Generalny
+		 
 		}
 		
 	}
