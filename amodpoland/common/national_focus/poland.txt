@@ -18,8 +18,8 @@ focus_tree = {
 		id = Pol_Wielkie_Zmiany
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 24
-		y = 0
+		x = 35
+		y = 0 
 		cost = 4
 
 		ai_will_do = {
@@ -38,7 +38,7 @@ focus_tree = {
 	    id = Pol_Strajk_Chlopski
 	 icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = Pol_Wielkie_Zmiany }
-		mutually_exclusive = { focus = Pol_Droga_Marszalka focus = Pol_Polski_Nacjonalizm }
+		mutually_exclusive = { focus = Pol_Droga_Marszalka focus = Pol_Sen_Dmowskiego focus = Pol_Krolewskie_Standardy }
 		 x = 16
 		 y = 1
 		
@@ -59,13 +59,36 @@ focus_tree = {
            }	
 		} 
 	}	
+
+	focus = {
+	    id = Pol_Krolewskie_Standardy
+	 icon = GFX_Krolestwo
+		prerequisite = { focus = Pol_Wielkie_Zmiany }
+		mutually_exclusive = { focus = Pol_Droga_Marszalka focus = Pol_Sen_Dmowskiego focus = Pol_Strajk_Chlopski   }
+		x = 53
+		y = 1
+		
+		cost = 4
+	            
+	    ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		   
+
+		   	
+		} 
+	}	
 	
 	focus = {
-	    id = Pol_Polski_Nacjonalizm
-	 icon = GFX_goal_generic_political_pressure
+	    id = Pol_Sen_Dmowskiego
+	 icon = GFX_Dmowski
 	 prerequisite = { focus = Pol_Wielkie_Zmiany }
-	 mutually_exclusive = { focus = Pol_Strajk_Chlopski focus = Pol_Droga_Marszalka }
-		x = 32
+	 mutually_exclusive = { focus = Pol_Strajk_Chlopski focus = Pol_Droga_Marszalka focus = Pol_Krolewskie_Standardy }
+		x = 41
 		y = 1
 		
 		cost = 4
@@ -87,10 +110,10 @@ focus_tree = {
 	   id = Pol_Droga_Marszalka
 	   icon = GFX_goal_tfv_strengthen_commonwealth_ties
 	  prerequisite = { focus = Pol_Wielkie_Zmiany }
-	   mutually_exclusive = { focus = Pol_Polski_Nacjonalizm focus = Pol_Strajk_Chlopski }
+	   mutually_exclusive = { focus = Pol_Sen_Dmowskiego focus = Pol_Strajk_Chlopski focus = Pol_Krolewskie_Standardy }
 	   
 	   
-	   X = 24
+	   X = 29 
 	   Y = 1 
 	    
 	   cost = 4
@@ -778,17 +801,218 @@ focus_tree = {
 		
 	}
 	
+	focus = {
+      id = Pol_TEST1
+
+	 icon = GFX_goal_generic_major_alliance
+	  prerequisite = { focus = Pol_Droga_Marszalka }
+	  
+	  
+	  x = 29 
+	  y = 2 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
 	
+	focus = {
+      id = Pol_Rzady_Sanacji
+
+	 icon = GFX_goal_generic_major_alliance
+	  prerequisite = { focus = Pol_TEST1 }
+	  mutually_exclusive = { focus = Pol_Oboz_Sikorskiego focus = Pol_Zreformowana_Sanacja }
+
+	  
+	  x = 29 
+	  y = 3 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+
+	focus = {
+      id = Pol_Oboz_Sikorskiego
+
+	 icon = GFX_Sikorski
+	  prerequisite = { focus = Pol_TEST1 }
+	  mutually_exclusive = { focus = Pol_Zreformowana_Sanacja focus = Pol_Rzady_Sanacji }
+	  
+	  x = 33
+	  y = 3 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
 	
+	focus = {
+      id = Pol_Zreformowana_Sanacja
+
+	 icon = GFX_RefSan
+	 prerequisite = { focus = Pol_TEST1 }
+	 mutually_exclusive = { focus = Pol_Rzady_Sanacji focus = Pol_Oboz_Sikorskiego  }
+	  
+	  x = 25
+	  y = 3 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+	 
+	focus = {
+      id = Pol_Reforma_Budzetu
+	 icon = GFX_goal_generic_major_alliance
+	 prerequisite = { focus = Pol_Rzady_Sanacji  }
+	 
+	  
+	  x = 29
+	  y = 4 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+    
+    focus = {
+      id = Pol_Denominacja_Zlotego
+	 icon = GFX_Zloty
+	 prerequisite = { focus =  Pol_Reforma_Budzetu focus = Pol_Ugody_z_opozycja  }
+	 
+	  
+	  x = 27
+	  y = 5
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
 	
-	
-	
-	
+	focus = {
+      id = Pol_Ugody_z_opozycja
+	 icon = GFX_goal_generic_major_alliance
+	 prerequisite = { focus = Pol_Zreformowana_Sanacja  }
+	 
+	  
+	  x = 25
+	  y = 4 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
 	
 
-	
-	
-	
+	focus = {
+      id = Pol_Reforma_Krajowa
+	 icon = GFX_goal_generic_major_alliance
+	 prerequisite = { focus = Pol_Oboz_Sikorskiego }
+	 
+	  
+	  x = 33
+	  y = 4 
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
+
+	focus = {
+      id = Pol_Grupa_Pawlikowskiego
+	 icon = GFX_Pawlik
+	 prerequisite = { focus = Pol_Reforma_Krajowa }
+	 
+	  
+	  x = 33
+	  y = 5
+	  
+	  cost = 10
+	   ai_will_do = {
+	     factor = 10 
+		 
+		
+		}
+		
+		available_if_capitulated = Yes
+		
+		completion_reward = { 
+		}
+		
+	}	
 	
 	
 	
@@ -831,7 +1055,7 @@ focus_tree = {
 	
 	############################
 	#### INDUSTRIAL SECTION ####
-	############################
+}	############################
 	
 	
 	
