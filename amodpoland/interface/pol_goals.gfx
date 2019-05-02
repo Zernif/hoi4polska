@@ -289,6 +289,36 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_Stan_Wojenny"
 	texturefile = "gfx/interface/goals/Stan_Wojenny.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Dmowski"
+	texturefile = "gfx/interface/goals/Dmowski.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Krolestwo"
+	texturefile = "gfx/interface/goals/Krolestwo.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_Sikorski"
+	texturefile = "gfx/interface/goals/Sikorski.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_RefSan"
+	texturefile = "gfx/interface/goals/RefSan.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_Zloty"
+	texturefile = "gfx/interface/goals/Zloty.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Pawlik"
+	texturefile = "gfx/interface/goals/Pawlik.dds"			
 	}		
 }	
 
