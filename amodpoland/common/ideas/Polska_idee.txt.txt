@@ -131,7 +131,7 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-            war_support_factor = -0.10
+            war_support_factor = -0.05
             mobilization_speed = -0.1 
             political_power_gain = -0.25
             }
@@ -153,10 +153,28 @@ ideas = {
             
             modifier = {
             army_org_factor = 0.05 
-            max_planning = 0.25 
+            max_planning = 0.1 
             }
         } 
 
+        Polska_A_i_B = {
+            
+            picture = 
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+            production_factory_max_efficiency_factor = -0.08
+            consumer_goods_factor = 0.1 
+            }
+        } 
 
 
 
